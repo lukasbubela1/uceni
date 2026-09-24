@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyLab</title>
+
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📚 StudyLab</h1>
+    <p>Uč se pomocí procvičování, ne jen čtením.</p>
+</header>
+
+<main>
+
+    <!-- PŘEDMĚTY -->
+    <section id="subjectsScreen" class="screen active">
+
+        <h2>Předměty</h2>
+        <p style="color:#9da7c5;margin-top:8px;">
+            Vyber předmět.
+        </p>
+
+        <div id="subjects" class="grid"></div>
+
+        <div class="config">
+            <b>Jak přidávat učivo:</b><br><br>
+            V GitHub repozitáři vytvoř složku v
+            <code>subjects/</code>.
+            <br><br>
+            Například:
+            <code>subjects/informatika/</code>
+            <br><br>
+            Do ní vlož textový soubor s učivem.
+        </div>
+
+    </section>
+
+
+    <!-- TÉMATA -->
+    <section id="topicsScreen" class="screen">
+
+        <button class="back" onclick="showSubjects()">← Zpět na předměty</button>
+
+        <h2 id="subjectTitle"></h2>
+
+        <div id="topics" class="grid"></div>
+
+    </section>
+
+
+    <!-- UČIVO -->
+    <section id="lessonScreen" class="screen">
+
+        <button class="back" onclick="backToTopics()">← Zpět na témata</button>
+
+        <div class="lesson">
+
+            <h2 id="lessonTitle"></h2>
+
+            <div id="lessonText" class="lesson-text"></div>
+
+            <button onclick="startQuiz()">
+                🧠 Začít procvičování
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- KVÍZ -->
+    <section id="quizScreen" class="screen">
+
+        <button class="back" onclick="backToLesson()">← Zpět k učivu</button>
+
+        <h2 id="quizTitle"></h2>
+
+        <div id="quiz" class="quiz"></div>
+
+        <div id="result"></div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js">
+
+</body>
+</html>
