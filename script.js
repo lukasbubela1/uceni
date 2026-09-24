@@ -1,5 +1,5 @@
-const GITHUB_USER = "TVUJ_GITHUB_UZIVATEL";
-const GITHUB_REPO = "TVUJ_REPOZITAR";
+const GITHUB_USER = "lukasbubela1";
+const GITHUB_REPO = "uceni";
 
 const SUBJECTS_FOLDER = "subjects";
 
